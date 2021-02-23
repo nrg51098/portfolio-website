@@ -1,5 +1,7 @@
 console.log('Its working')
 
+
+
 let theme = localStorage.getItem('theme')
 
 if(theme == null){
@@ -38,3 +40,18 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+
+var sound = new Howl({
+	src: ['bubbles.mp3']
+  });
+
+  
+function onKeyDown(event){
+	sound.play();
+}
+
+
+
+  
+  
